@@ -17,13 +17,21 @@
         src: url(/fonts/Ynsect\ Moksha.ttf);
     }
     
+    @font-face {
+        font-family: blogMainFont;
+        font-style: normal;
+        font-stretch: narrower;
+        font-weight: lighter;
+        src: url(/fonts/vibrocentric\ rg\ it.ttf);
+    }
+    
     #title {
         text-decoration-color: black;
         font-weight: bolder;
         color: black;
         text-align: center;
         font-size: 60px;
-        font-family: headerFont;
+        font-family: blogMainFont;
     }
     
     #siteMainText {
@@ -89,7 +97,7 @@
     textarea {
         width: 100%;
         /* Full width */
-        padding: 10px;
+        padding: 12px;
         /* Some padding */
         border: none;
         /* Make sure that padding and width stays in place */
