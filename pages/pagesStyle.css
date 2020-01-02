@@ -107,6 +107,22 @@
         /* Bottom margin */
         resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
     }
+    
+    input[type=email],
+    select,
+    textarea {
+        width: 100%;
+        /* Full width */
+        padding: 12px;
+        /* Some padding */
+        border: none;
+        /* Make sure that padding and width stays in place */
+        margin-top: 6px;
+        /* Add a top margin */
+        margin-bottom: 16px;
+        /* Bottom margin */
+        resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+    }
     /* Style the submit button with a specific background color etc */
     
     input[type=submit] {
@@ -120,6 +136,21 @@
     /* When moving the mouse over the submit button, add a darker green color */
     
     input[type=submit]:hover {
+        background-color: rgba(15, 37, 53, 0.363);
+    }
+    /* Add a background color and some padding around the form */
+    
+    input[type=reset] {
+        background-color: rgba(1, 2, 1, 0.763);
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    /* When moving the mouse over the submit button, add a darker green color */
+    
+    input[type=reset]:hover {
         background-color: rgba(15, 37, 53, 0.363);
     }
     /* Add a background color and some padding around the form */
