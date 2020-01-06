@@ -28,40 +28,41 @@
     <div class="row">
         <div class="leftcolumn">
             <div class="card">
-                <h2>Unreal Engine 4 C++ Start Guide</h2>
+                <h1>
+                    <a href="/pages/blog/Unreal_Engine_4_C++_Start_Guide.html " style="color : black;">Unreal Engine 4 Start C++ Guide </a>
+                </h1>
                 <h5>posted by: <b>Vinícius Cordeiro Jan 2, 2020</b></h5>
-                <div class="fakeimg" style="height:512px;"><img src="/img/NotGivingUpbackground.png" width=100% height=100%></div>
+                <div class="fakeimg" style="height:524px;"><img src="/img/NotGivingUpbackground.png" width=100% height=100%></div>
+                <div class="caption">
+                    <caption>
+                        <b>Some results of my testings using UE4 and c++</b>
+                    </caption>
+                </div>
+
                 <p>How to get started with unreal engine 4 c++ is not simple, even if you are a experienced programmer as some say..</p>
-                <p>Unreal Engine 4 API can be challenging.. expecially if you are starting to program or have never coded before so I will try to help you out keep in mind some stuff will be different, based on the version you have of the engine</p>
-                <p>First time I started playing around with Unreal Engine 4, I only had expirence with Unity 3D and it was not much, has not been even 1 year since I started game development, when I decided to move to Unreal</p>
-                <br>I was trully confused by the interface as it was rich compared to Unity(not a bad thing by the way.. i like minimalism) and sir. I have to tell you.better lookout for courses or tutorials on the internet, I've tried to learn alone<br>
-                <br>What a bad choise lol.. I could not do any, wasn't able to even create a blueprint of a door, as simple as I later discovered.
-                <br>Well.. enough let's get to the point
-                <br> Creating classes in unreal can be a pain, why? because must of the time when you create a class using the hot reload, it will probably show you some errors
-                <br>Most of them being caused by you creating a class, and not checking the code you previously editted or a simple hot reload bug, that usually is fixed by restarting the engine
-                <br>a classic exemple is when you add a class before checking you code or building it as you don't know if there is any error yet. So this can make a russle to find it, because sometimes the engine won't tell you what happened wrong with
-                the code on the hotreload
-                <br>
+                Unreal Engine 4 API can be challenging.. expecially if you are starting to program or have never coded before so I will try to help you out keep in mind some stuff will be different, based on the version you have of the engine First time I started playing
+                around with Unreal Engine 4, I only had expirence with Unity 3D and it was not much, has not been even 1 year since I started game development, when I decided to move to Unreal
+                <br>I was trully confused by the interface as it was rich compared to Unity(not a bad thing by the way.. i like minimalism) and sir. I have to tell you.better lookout for courses or tutorials on the internet, I've tried to learn alone
+                What a bad choise lol.. I could not do any, wasn't able to even create a blueprint of a door, as simple as I later discovered. Well.. enough let's get to the point
+                <p>Creating classes in unreal can be a pain, why? because must of the time when you create a class using the hot reload, it will probably show you some errors
+                    <br>Most of them being caused by you creating a class, and not checking the code you previously editted or a simple hot reload bug, that usually is fixed by restarting the engine
+                    <br>a classic exemple is when you add a class before checking you code or building it as you don't know if there is any error yet. So this can make a russle to find it, because sometimes the engine won't tell you what happened wrong
+                    with the code on the hotreload
+                </p>
                 <h3>The .generated.h file not found</h3>
-                <br>What that means.. not much but the UHT(Unreal Heater Tool) need this to allow the engine to compile your code and show on the engine with blueprints if you're going to use them
-                <code>
-                    // header #include "NameOfYouClass.generated.h "
-                    </code>
-                <p> It's not so difficult but you can be easily overthinking when this error appear be sure to always check if the .generate.h is right on the header of your class</p>
-                <br>
+                <br>What that means.. not much but the <b>UHT(Unreal Heater Tool)</b> need this to allow the engine to compile your code and show on the engine with blueprints if you're going to use them
+                <pre><code>
+                    // header 
+                    #include "NameOfYouClass.generated.h "
+                    </code></pre> It's not so difficult but you can be easily overthinking when this error appear be sure to always check if the .generate.h is right on the header of your class
                 <h3>The UObjects</h3>
-                <br> When using unreal for the first time, you need to learn UObjects an it's using inside the Engine
-                <br> A UObject it's the main class to create other classes inside the engine, that have a hell of children,
-                <br> One of them the most used it's <b>AActor</b>
-                <br> You will basiclly use for anything, even characters, why? because characters is a class derived from the AActor class
-                <br> What about controllers? Well... controllers are derived from AActors class too
-                <br> The only thing I know that is not derived directly from AActor it's UUserWidget class, as it derives from the Slate system of Unreal
-                <br> And the slate derives from UObject. So this won't have the same overridable functions and stuff, which is another thing you have to look for when using the overriden function,
-                <br> Always look's in the derived class which function this class allows to be overriden
-                <br> How I Do it?
-                <br> Quite simple..
-                <br> Select the name of the class inside the header file and press f12 this will take you to the parent of that class
-                <pre><code class="C">
+                <p>When using unreal for the first time, you need to learn UObjects an it's use inside the Engine A <b>UObject</b> it's the main class to create other classes inside the engine, that have a hell of children, One of them the most used it's
+                    <b>AActor</b> You will basiclly use for anything, even characters, why? because characters is a class derived from the AActor class What about controllers? Well... controllers are derived from AActors class too The only thing I know
+                    that is not derived directly from <b>AActor</b> it's <b>UUserWidget</b> class, as it derives from the Slate system of Unreal And the slate derives from <b>UObject</b>. So this won't have the same overridable functions and stuff, which
+                    is another thing you have to look for when using the overriden function, Always look's in the derived class which function this class allows to be overriden How I Do it? Quite simple.. Select the name of the class inside the header
+                    file and press f12 this will take you to the parent of that class
+                </p>
+                <pre><code>
                     //header
                     // Your copyright notice
                     #pragma once
@@ -70,7 +71,7 @@
                     #include "GameFramework/Actor.h"
                     #include "YourClass.generated.h"
                     
-                    UCLASS() ↓ ¬ The class you should select and press f12 to go to the declaration
+                    UCLASS()                                  ↓ ¬ The class you should select and press f12 to go to the declaration
                     class YOURGAME_API AYourClass : public AActor
                     {
                     GENERATED_BODY()
@@ -90,19 +91,16 @@
                     
                     };
                     </code></pre>
-                <br> This will give you a general idea of what you can do with it
             </div>
         </div>
         <div class="rightcolumn ">
             <div class="card ">
                 <h2> Unreal Engine 4</h2>
-                <div class="container ">
+                <div class="container">
                     <h3>C++</h3>
-                    <ul>
-                        <li><a href="/pages/blog/Unreal_Engine_4_C++_Start_Guide.html "><button class="recentPostButton "><span>UE4 Start Guide</span></button></a><br></li>
-                        <li> <a href="/pages/blog/Unreal_Engine_4_C++_Start_Guide.html "><button class="recentPostButton "><span>UE4 Creating Character</span></button></a><br></li>
-                        <li><a href="/pages/blog/Unreal_Engine_4_C++_Start_Guide.html "><button class="recentPostButton "><span>UE4 Working with UMG</span></button></a><br></li>
-                    </ul>
+                    <a href="/pages/blog/Unreal_Engine_4_C++_Start_Guide.html"><button class="recentPostButton"><span>UE4 Start Guide</span></button></a><br>
+                    <a href="/pages/blog/Unreal_Engine_4_C++_Start_Guide.html"><button class="recentPostButton"><span>UE4 Creating Character</span></button></a><br>
+                    <a href="/pages/blog/Unreal_Engine_4_C++_Start_Guide.html"><button class="recentPostButton"><span>UE4 Working with UMG</span></button></a><br>
                 </div>
             </div>
             <div class="card ">

@@ -181,6 +181,33 @@
         border-radius: 4px;
         cursor: pointer;
     }
+    
+    .button-success {
+        background-color: rgba(1, 2, 1, 0.763);
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .button-success:pure-button {
+        background-color: rgba(1, 2, 1, 0.763);
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .button-success:button-xlarge {
+        background-color: rgba(1, 2, 1, 0.763);
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
     /* When moving the mouse over the submit button, add a darker green color */
     
     input[type=submit]:hover {
@@ -317,4 +344,12 @@
         color: black;
         font-family: 'Courier New', Courier, monospace;
         font-weight: lighter;
+    }
+    
+    .caption {
+        caption-side: top;
+        font-weight: lighter;
+        background-color: rgba(0, 0, 0, .5);
+        color: black;
+        text-align: center;
     }
