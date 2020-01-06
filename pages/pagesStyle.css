@@ -133,6 +133,13 @@
     }
     /* Style inputs with type="text", select elements and textareas */
     
+    .code {
+        color: black;
+        background-color: lightgrey;
+        border-radius: 0px;
+        padding: 20px;
+    }
+    
     input[type=text],
     select,
     textarea {
