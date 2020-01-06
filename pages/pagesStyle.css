@@ -304,7 +304,10 @@
     */
     
     #codeStyle {
+        border-radius: 0px;
+        background-color: lightgrey;
+        padding: 50px;
         color: black;
-        background: gray;
         font-family: blogMainFont;
+        font-weight: lighter;
     }
