@@ -61,38 +61,36 @@
                 <br> How I Do it?
                 <br> Quite simple..
                 <br> Select the name of the class inside the header file and press f12 this will take you to the parent of that class
-
-                <code>
-                    <br>//header
+                <div class="codeStyle">
+                    //header
                     <br>
-                    <br>//  Your copyright notice
-                    <br>
+                    <br>// Your copyright notice
                     <br>#pragma once
                     <br>
                     <br>#include "CoreMinimal.h"
                     <br>#include "GameFramework/Actor.h"
                     <br>#include "YourClass.generated.h"
                     <br>
-                    <br>UCLASS()                                 ↓    ¬ The class you should select and press f12 to go to the declaration 
+                    <br>UCLASS() ↓ ¬ The class you should select and press f12 to go to the declaration
                     <br>class YOURGAME_API AYourClass : public AActor
                     <br>{
-                        <br>GENERATED_BODY()
-                        <br>public:
-                        <br>// Sets default values for this actor's properties
-                        <br>AYourClass();
-                        <br>
-                        <br>protected:
-                        <br>// Called when the game starts or when spawned
-                        <br>virtual void BeginPlay() override;
-                        <br>
-                        <br>virtual void OnConstruction(const FTransform& Transform) override;
-                        <br>
-                        <br>public:
-                        <br>// Called every frame
-                        <br>virtual void Tick(float DeltaTime) override;
-                        <br>
+                    <br>GENERATED_BODY()
+                    <br>public:
+                    <br>// Sets default values for this actor's properties
+                    <br>AYourClass();
+                    <br>
+                    <br>protected:
+                    <br>// Called when the game starts or when spawned
+                    <br>virtual void BeginPlay() override;
+                    <br>
+                    <br>virtual void OnConstruction(const FTransform& Transform) override;
+                    <br>
+                    <br>public:
+                    <br>// Called every frame
+                    <br>virtual void Tick(float DeltaTime) override;
+                    <br>
                     <br>};
-                    </code>
+                </div>
                 <br> This will give you a general idea of what you can do with it
             </div>
         </div>
