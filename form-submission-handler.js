@@ -6,10 +6,10 @@
 
     function validateHuman(honeypot) {
         if (honeypot) { //if hidden form filled up
-            console.log("Robot Detected!");
+            //console.log("Robot Detected!");
             return true;
         } else {
-            console.log("Welcome Human!");
+            // console.log("Welcome Human!");
         }
     }
 
@@ -55,7 +55,7 @@
         formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
         formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
 
-        console.log(formData);
+        //console.log(formData);
         return formData;
     }
 
@@ -64,11 +64,11 @@
         var form = event.target;
         var data = getFormData(form); // get the values submitted in the form
 
-        /* OPTION: Remove this comment to enable SPAM prevention, see README.md*/
+        /* OPTION: Remove this comment to enable SPAM prevention, see README.md
         if (validateHuman(data.honeypot)) { //if form is filled, form will not be submitted
             return false;
         }
-
+        */
 
         if (data.email && !validEmail(data.email)) { // if email is not valid show error
             var invalidEmail = form.querySelector(".email-invalid");
@@ -81,18 +81,18 @@
             var url = form.action;
             var xhr = new XMLHttpRequest();
             xhr.open('POST', url);
-            // xhr.withCredentials = true;
+            xhr.withCredentials = true;
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             xhr.onreadystatechange = function() {
-                console.log(xhr.status, xhr.statusText);
-                console.log(xhr.responseText);
+                //console.log(xhr.status, xhr.statusText);
+                //console.log(xhr.responseText);
                 var formElements = form.querySelector(".form-elements")
                 if (formElements) {
                     formElements.style.display = "none"; // hide form
                 }
                 var thankYouMessage = form.querySelector(".thankyou_message");
                 if (thankYouMessage) {
-                    thankYouMessage.style.display = "block";
+                    thankYouMessage.style.display = "show"
                 }
                 return;
             };
@@ -105,7 +105,7 @@
     }
 
     function loaded() {
-        console.log("Contact form submission handler loaded successfully.");
+        //console.log("Contact form submission handler loaded successfully.");
         // bind to the submit event of our form
         var forms = document.querySelectorAll("form.gform");
         for (var i = 0; i < forms.length; i++) {
