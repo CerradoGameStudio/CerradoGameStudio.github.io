@@ -353,3 +353,8 @@
         color: black;
         text-align: center;
     }
+    
+    #thankyou_message {
+        background-color: transparent;
+        display: none;
+    }
