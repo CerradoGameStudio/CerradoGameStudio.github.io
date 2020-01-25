@@ -178,7 +178,9 @@ textarea {
     /* Add a top margin */
     margin-bottom: 16px;
     /* Bottom margin */
-    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+    background-color: #555;
 }
 
 input[type=email],
@@ -194,7 +196,9 @@ textarea {
     /* Add a top margin */
     margin-bottom: 16px;
     /* Bottom margin */
-    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+    background-color: #555;
 }
 
 
