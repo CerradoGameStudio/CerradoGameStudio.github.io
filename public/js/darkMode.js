@@ -24,12 +24,14 @@ $(".dark-toggle").on("click", function() {
 // DARK MODE TOGGLE FUNCTION
 var setTheme = function(theme) {
     if (theme === 'dark') {
+        $(".card").addClass("dark-mode-enabled");
         $("body").addClass("dark-mode-enabled");
-        $(".dark-toggle").text("ON");
+        $(".dark-toggle").text("🌕");
         setCookie('Theme', 'dark', 999);
     } else {
+        $(".card").removeClass("dark-mode-enabled");
         $("body").removeClass("dark-mode-enabled");
-        $(".dark-toggle").text("OFF");
+        $(".dark-toggle").text("🔅");
         setCookie('Theme', 'light', 999);
     }
 };

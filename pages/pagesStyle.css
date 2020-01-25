@@ -10,6 +10,7 @@ body {
     background-color: white;
     scroll-behavior: smooth;
     overflow: auto;
+    color: black;
 }
 
 .switch {
@@ -351,10 +352,18 @@ input[type=reset]:hover {
 /* Add a card effect for articles */
 
 .card {
+    font-family: sarpanch;
+    color: black;
     background-color: transparent;
     padding: 10px;
     margin-top: 5px;
-    color: black;
+}
+
+.card.dark-mode-enabled {
+    color: white;
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 5px;
 }
 
 
@@ -404,6 +413,6 @@ input[type=reset]:hover {
 }
 
 body.dark-mode-enabled {
-    background-color: #222;
+    background-color: #333;
     color: white;
 }
