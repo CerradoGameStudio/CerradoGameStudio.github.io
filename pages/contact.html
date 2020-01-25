@@ -14,38 +14,40 @@
 </head>
 
 <body>
-    <div id="borderHeader">
-        <div id="title">
-            <a href="/index.html" style="color: rgb(0, 0, 0);">CERRADO GAME STUDIO<sup>®</sup></a>
+    <section style="font-family: forgotten;">
+        <div id="borderHeader">
+            <div id="title">
+                <a href="/index.html" style="color:rgba(200, 200, 200, 1); font-family: moksha;">CERRADO GAME STUDIO<sup>®</sup></a>
+            </div>
+            <a href="/index.html"><button class ="button" style="vertical-align: middle;"><span>Página Inicial</span></button></a>
+            <a href="/pages/blog.html"><button class="button" style="vertical-align:middle"><span>Blog</span></button></a>
+            <a href="/pages/contact.html"><button class="button" style="vertical-align:middle"><span>Contact </span></button></a>
+            <a href="https://github.com/Cordeirox/" target="_blank"><button class="button" style="vertical-align:middle"><span>Portfolio </span></button></a>
+            <a href="https://www.youtube.com/channel/UCOIxiKEOJ-7GPXJxL6dC0uA" target="_blank"><button class="button" style="vertical-align: middle"><span>YouTube</span></button></a>
+            <a href="/pages/about.html"><button class="button" style="vertical-align:middle"><span>About</span></button></a>
         </div>
-        <a href="/pages/blog.html"><button class="button" style="vertical-align:middle"><span>Blog</span></button></a>
-        <a href="/pages/contact.html"><button class="button" style="vertical-align:middle"><span>Contact </span></button></a>
-        <a href="https://github.com/Cordeirox/" target="_blank"><button class="button" style="vertical-align:middle"><span>Portfolio </span></button></a>
-        <a href="https://www.youtube.com/channel/UCOIxiKEOJ-7GPXJxL6dC0uA" target="_blank"><button class="button" style="vertical-align: middle"><span>YouTube</span></button></a>
-        <a href="/pages/about.html"><button class="button" style="vertical-align:middle"><span>About</span></button></a>
-    </div>
-    <div class="container">
+        <div class="container">
 
-        <script type="text/javascript">
-            var submitted = false;
-        </script>
+            <script type="text/javascript">
+                var submitted = false;
+            </script>
 
-        <!-- Reload the page  -->
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/pages/contact.html';}"></iframe>
+            <!-- Reload the page  -->
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/pages/contact.html';}"></iframe>
 
-        <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="from_email@example.com" action="https://script.google.com/macros/s/AKfycbz-JMX8xO5293dC2DL7Ed9fxdZDxCRfJ318TwOqS3nEJjTj-IA/exec" target="hidden_iframe" onsubmit="return validateForm(); ">
+            <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="from_email@example.com" action="https://script.google.com/macros/s/AKfycbz-JMX8xO5293dC2DL7Ed9fxdZDxCRfJ318TwOqS3nEJjTj-IA/exec" target="hidden_iframe" onsubmit="return validateForm(); ">
 
-            <div class="form-elements">
-                <label for="First Name">First Name</label>
-                <input type="text" id="First Name" name="firstname" placeholder="Your name..">
-                <label for="Last Name">Last Name</label>
-                <input type="text" id="Last Name" name="lastname" placeholder="Your last name..">
+                <div class="form-elements">
+                    <label for="First Name">First Name</label>
+                    <input type="text" id="First Name" name="firstname" placeholder="Your name..">
+                    <label for="Last Name">Last Name</label>
+                    <input type="text" id="Last Name" name="lastname" placeholder="Your last name..">
 
-                <label for="E-mail">E-mail</label><span style="color: red !important; display: inline; float: none;">*</span>
-                <input type="text" id="E-mail" name="email" placeholder="Your e-mail.." value="" required>
+                    <label for="E-mail">E-mail</label><span style="color: red !important; display: inline; float: none;">*</span>
+                    <input type="text" id="E-mail" name="email" placeholder="Your e-mail.." value="" required>
 
-                <label for="country">Country</label><span style="color: red !important; display: inline; float: none;">*</span>
-                <select id="country" name="country" class="form-control" required>
+                    <label for="country">Country</label><span style="color: red !important; display: inline; float: none;">*</span>
+                    <select id="country" name="country" class="form-control" required>
                 <option value = ""> Please select a country </option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
@@ -293,31 +295,32 @@
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
 
-                <label for="Message">Message</label>
-                <textarea id="Message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                    <label for="Message">Message</label>
+                    <textarea id="Message" name="message" placeholder="The reason for you to contact us..." style="height:200px"></textarea>
 
-                <button class="button-success">
+                    <button class="button-success">
                 Submit
             </button>
-                <input type="reset" value="Reset">
-            </div>
+                    <input type="reset" value="Reset">
+                </div>
 
-            <div id="thankyou_message" style="display: none;">
-                <h2>
-                    <em>Thanks</em> for contacting us! We will get back to you soon!
-                </h2>
-            </div>
+                <div id="thankyou_message" style="display: none;">
+                    <h2>
+                        <em>Thanks</em> for contacting us! We will get back to you soon!
+                    </h2>
+                </div>
 
-        </form>
+            </form>
 
-        <script data-cfasync="false" type="text/javascript" src="/form-submission-handler.js">
-        </script>
-        <script>
-            function validateForm() {
-                submitted = true;
-                return true;
-            }
-        </script>
+            <script data-cfasync="false" type="text/javascript" src="/form-submission-handler.js">
+            </script>
+            <script>
+                function validateForm() {
+                    submitted = true;
+                    return true;
+                }
+            </script>
+    </section>
     </div>
     <footer>
         <b>Vinícius Gonçalves Cordeiro</b>
